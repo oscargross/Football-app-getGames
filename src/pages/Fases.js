@@ -52,7 +52,7 @@ const Fases = ({ navigation, route }) => {
       <View>       
           <FlatList
             data={data}
-            keyExtractor={(index) => index.toString()}
+            keyExtractor={(id, index) => index.toString()}
             renderItem={({ item }) =>
               item.fase_nome ? (
                 <TouchableOpacity                 
