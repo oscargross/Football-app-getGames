@@ -78,7 +78,7 @@ const Jogos = ({ route }) => {
               </View>
             </View>
           )}
-          keyExtractor={(index) => index.toString()}
+          keyExtractor={(id, index) => index.toString()}
         />
       </View>
     </SafeAreaView>
